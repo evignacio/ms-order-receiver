@@ -1,4 +1,4 @@
-package com.fiap.order_receiver;
+package com.fiap.orderreceiver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

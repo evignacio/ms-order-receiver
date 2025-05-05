@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.fiap.order-receiver' is invalid and this project uses 'com.fiap.order_receiver' instead.
+* The original package name 'com.fiap.order-receiver' is invalid and this project uses 'com.fiap.orderreceiver' instead.
 
 # Getting Started
 
