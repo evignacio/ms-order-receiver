@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: order-receiver
+  kafka:
+    bootstrap-servers: http://localhost:9092
+kafka:
+  topic:
+    order-receiver:
+      name: orderReceiver
+      partition: 0
