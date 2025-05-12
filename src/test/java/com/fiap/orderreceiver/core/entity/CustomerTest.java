@@ -14,7 +14,7 @@ class CustomerTest {
 
         Customer customer = new Customer(id, addressId);
 
-        assertThat(customer.getId()).isEqualTo(id);
+        assertThat(customer.getCustomerId()).isEqualTo(id);
         assertThat(customer.getAddressId()).isEqualTo(addressId);
     }
 

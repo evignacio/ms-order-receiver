@@ -18,8 +18,8 @@ class OrderTest {
         Order order = new Order(customer, orderItems, creditCard);
 
         assertThat(order.getCustomer()).isEqualTo(customer);
-        assertThat(order.getIrderItems()).isEqualTo(orderItems);
-        assertThat(order.getCredtCard()).isEqualTo(creditCard);
+        assertThat(order.getOrderItems()).isEqualTo(orderItems);
+        assertThat(order.getCreditCard()).isEqualTo(creditCard);
     }
 
     @Test

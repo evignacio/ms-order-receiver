@@ -4,35 +4,35 @@ import java.util.Set;
 
 public class Order {
     private Customer customer;
-    private Set<OrderItem> irderItems;
-    private CreditCard credtCard;
+    private Set<OrderItem> orderItems;
+    private CreditCard creditCard;
 
-    public Order(Customer customer, Set<OrderItem> irderItems, CreditCard credtCard) {
+    public Order(Customer customer, Set<OrderItem> orderItems, CreditCard creditCard) {
         setCustomer(customer);
-        setIrderItems(irderItems);
-        setCredtCard(credtCard);
+        setOrderItems(orderItems);
+        setCreditCard(creditCard);
     }
 
-    public Set<OrderItem> getIrderItems() {
-        return irderItems;
+    public Set<OrderItem> getOrderItems() {
+        return orderItems;
     }
 
-    private void setIrderItems(Set<OrderItem> irderItems) {
-        if (irderItems == null || irderItems.isEmpty())
+    private void setOrderItems(Set<OrderItem> orderItems) {
+        if (orderItems == null || orderItems.isEmpty())
             throw new IllegalArgumentException("Order items cannot be null or empty");
 
-        this.irderItems = irderItems;
+        this.orderItems = orderItems;
     }
 
-    public CreditCard getCredtCard() {
-        return credtCard;
+    public CreditCard getCreditCard() {
+        return creditCard;
     }
 
-    private void setCredtCard(CreditCard credtCard) {
-        if (credtCard == null)
+    private void setCreditCard(CreditCard creditCard) {
+        if (creditCard == null)
             throw new IllegalArgumentException("Credit card cannot be null");
 
-        this.credtCard = credtCard;
+        this.creditCard = creditCard;
     }
 
     public Customer getCustomer() {

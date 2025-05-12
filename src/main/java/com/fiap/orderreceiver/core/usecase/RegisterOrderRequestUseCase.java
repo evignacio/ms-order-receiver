@@ -15,7 +15,7 @@ public class RegisterOrderRequestUseCase {
     }
 
     public void execute(Order order) {
-        log.info("Registering order request for user, id {}", order.getCustomer().getId());
+        log.info("Registering order request for user, id {}", order.getCustomer().getCustomerId());
         orderGateway.registerOrderRequest(order);
         log.info("Order request completed successfully ");
     }

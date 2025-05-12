@@ -1,23 +1,23 @@
 package com.fiap.orderreceiver.core.entity;
 
 public class Customer {
-    private String id;
+    private String customerId;
     private String addressId;
 
-    public Customer(String id, String addressId) {
-        setId(id);
+    public Customer(String customerId, String addressId) {
+        setCustomerId(customerId);
         setAddressId(addressId);
     }
 
-    public String getId() {
-        return id;
+    public String getCustomerId() {
+        return customerId;
     }
 
-    private void setId(String id) {
-        if (id == null || id.isEmpty())
+    private void setCustomerId(String customerId) {
+        if (customerId == null || customerId.isEmpty())
             throw new IllegalArgumentException("Id cannot be null or empty");
 
-        this.id = id;
+        this.customerId = customerId;
     }
 
     public String getAddressId() {
